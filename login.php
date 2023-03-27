@@ -74,7 +74,7 @@ mysqli_close($conn);
                                   
                                 </div>
 
-                                <a href="index.php">
+                                <a href="loginn.html">
                                     <div class="hexagon-item">
                                         <div class="hex-item">
                                             <div></div>
@@ -91,13 +91,13 @@ mysqli_close($conn);
                                                 <span class="icon">
                                                     <i class="fa fa-bullseye"></i>
                                                 </span>
-                                                <span class="title">Ajouter une signature  </span>
+                                                <span class="title">Se déconnecter  </span>
                                             </span>
                                             <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
                                         </a>
                                     </div>
                                     </a>
-                                   <a href="indexx.html">
+                                   <a href="index.php">
                                     <div class="hexagon-item">
                                         <div class="hex-item">
                                             <div></div>
@@ -114,13 +114,13 @@ mysqli_close($conn);
                                                 <span class="icon">
                                                     <i class="fa fa-id-badge"></i>
                                                 </span>
-                                                <span class="title">PDFs </span>
+                                                <span class="title">  Signer avec le pavé numérique</span>
                                             </span>
                                             <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
                                         </a>
                                     </div>
                                    </a>
-                                 <a href="https://openclassrooms.com/fr/">
+                                 <a href="indexx.html">
                                     <div class="hexagon-item">
                                         <div class="hex-item">
                                             <div></div>
@@ -137,7 +137,7 @@ mysqli_close($conn);
                                                 <span class="icon">
                                                     <i class="fa fa-map-signs"></i>
                                                 </span>
-                                                <span class="title">Lettres de motivation </span>
+                                                <span class="title"> Signer avec le QR  </span>
                                             </span>
                                             <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
                                         </a>
