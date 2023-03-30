@@ -9,13 +9,13 @@
 		<h2>Creer un compte</h2>
 		<form action="creercompte.php" method="post">
 		<label for="username">username</label>
-			<input type="email" id="email" name="username" required>
+			<input type="username" id="username" name="username" required>
 			<label for="email">Email</label>
 			<input type="email" id="email" name="email" required>
 			<label for="password">Mot de passe</label>
 			<input type="password" id="password" name="password" required>
 			<input type="submit" value="Se connecter">
-			<a href="login.php"> * creer un compte </a>
+			<a href="creercompte.php"> * J'ai un compte </a>
 		</form>
 	</div>
 </body>

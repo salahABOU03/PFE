@@ -3,8 +3,8 @@ session_start();
 
 // Informations de connexion à la base de données
 $host = "localhost"; // nom d'hôte
-$user = "root"; // nom d'utilisateur MySQL
-$password = ""; // mot de passe MySQL
+$user = "root"; //      nom d'utilisateur MySQL
+$password = ""; //      mot de passe MySQL
 $database = "users"; // nom de la base de données
 
 // Connexion à la base de données
@@ -32,9 +32,9 @@ $result = mysqli_query($conn, $query);
 if (mysqli_num_rows($result) == 1) {
     // L'utilisateur a été trouvé, vous pouvez récupérer les informations de l'utilisateur à partir de la ligne de résultat
     $row = mysqli_fetch_assoc($result);
-    $id = $row['id'];
+  
     $username = $row['username'];
-    $score = $row['score'];
+  
     $_SESSION['username'] = $username;
     
     // Redirection vers la page souhaitée

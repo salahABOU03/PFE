@@ -24,7 +24,7 @@ label {
 	margin-bottom: 10px;
 }
 
-input[type="email"],
+input[type="email"],input[type="username"],
 input[type="password"] {
 	border: none;
 	border-radius: 3px;
