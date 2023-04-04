@@ -44,6 +44,7 @@ if (mysqli_num_rows($result) == 1) {
 } else {
     // L'utilisateur n'a pas été trouvé ou les informations de connexion sont incorrectes
     echo "Adresse e-mail ou mot de passe incorrect.";
+    header("Location: red.html");
 }
 
 

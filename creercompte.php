@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Connexion</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="sasa.css">
 </head>
 <body>
 	<div class="login-box">
@@ -14,8 +14,9 @@
 			<input type="email" id="email" name="email" required>
 			<label for="password">Mot de passe</label>
 			<input type="password" id="password" name="password" required>
-			<input type="submit" value="Se connecter">
-			<a href="creercompte.php"> * J'ai un compte </a>
+			<input type="submit" value="Creer">
+                          
+			<a href="loginn.html"> J'ai un compte </a>
 		</form>
 	</div>
 </body>

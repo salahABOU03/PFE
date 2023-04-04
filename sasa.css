@@ -1,0 +1,105 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  /* Styles for the create account form */
+  .login-box {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .login-box h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .login-box label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .login-box input[type="username"],
+  .login-box input[type="email"],
+  .login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+  
+  .login-box input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .login-box input[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  
+  .login-box a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .login-box a:hover {
+    color: #2980b9;
+  }
+  
+  /* Media queries for responsive design */
+  @media screen and (max-width: 600px) {
+    .login-box {
+      max-width: 300px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .login-box {
+      max-width: 200px;
+    }
+  }
+  
+  /* Animation styles */
+  @keyframes slide-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .slide-down {
+    animation: slide-down 0.5s ease-in-out;
+  }
+  
