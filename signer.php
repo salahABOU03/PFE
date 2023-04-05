@@ -1,40 +1,28 @@
 <?php
-require_once('phpqrcode/qrlib.php'); 
-	
-/*$qrvalue = "Hello...";
-
-$tempDir = "pdfqrcodes/"; 
-$codeContents = $qrvalue; 
-$fileName = 'o.png'; 
-$pngAbsoluteFilePath = $tempDir.$fileName; 
-$urlRelativeFilePath = $tempDir.$fileName; 
-if (!file_exists($pngAbsoluteFilePath)) { 
-    QRcode::png($codeContents, $pngAbsoluteFilePath); 
-}
-
-echo "Done generating QR Code Image."*/
- 
+    //include('sauvegarde_pdf.php') ; 
     include('config.php');
     use setasign\Fpdi\Fpdi;
 
     require_once('fpdf/fpdf.php'); 
     require_once('fpdi2/src/autoload.php'); 
-//    require_once('mis_variables_pdf.php'); 
+    //require_once('mis_variables_pdf.php'); 
+
+
     ob_start(); 
-     $pdf = new FPDI();
+
+    $pdf = new FPDI();
 
     # Page 1
     $pdf->AddPage(); 
-   
     $pdf->setSourceFile('Files_Pdf/PDF.pdf'); 
     $tplIdx = $pdf->importPage(1); 
     $pdf->useTemplate($tplIdx); 
-  
+        
 
     $pdf->SetFont('Arial', 'B', '11'); 
     $pdf->SetXY(80,250);
-   
-    $pdf->Image('pdfqrcodes/o.png', 90, 248, 40, '', 'PNG', '', 'T', false, 300, '', false, false, 0, false, false, false);
+    $pdf->Write(10,$nombreFirma);
+    $pdf->Image('one.png', 90, 248, 40, '', 'PNG', '', 'T', false, 300, '', false, false, 0, false, false, false);
     //p   $pdf->Image('firmas/one.png', 10, 10, 50, 0, 'PNG', '', false, 0, -50);
     $archivo='Files_Pdf/PDF.pdf' ; 
     unlink($archivo); 

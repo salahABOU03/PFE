@@ -20,7 +20,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$password = $_POST['password'];
  }
 
-// Exemple de requête pour récupérer l'utilisateur avec l'adresse e-mail et le mot de passe donnés
+//  récupérer l'utilisateur avec l'adresse e-mail et le mot de passe 
 
 $email = $_POST['email'];
 $password = $_POST['password'];
@@ -28,9 +28,9 @@ $password = $_POST['password'];
 $query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
 $result = mysqli_query($conn, $query);
 
-// Vérification du résultat de la requête
+
 if (mysqli_num_rows($result) == 1) {
-    // L'utilisateur a été trouvé, vous pouvez récupérer les informations de l'utilisateur à partir de la ligne de résultat
+    
     $row = mysqli_fetch_assoc($result);
   
     $username = $row['username'];
@@ -42,7 +42,7 @@ if (mysqli_num_rows($result) == 1) {
      //header("Location: dashboard.php");
     //exit();
 } else {
-    // L'utilisateur n'a pas été trouvé ou les informations de connexion sont incorrectes
+    // L'utilisateur n'a pas été trouvé ou les informations 
     echo "Adresse e-mail ou mot de passe incorrect.";
     header("Location: red.html");
 }
